@@ -1,0 +1,19 @@
+
+A- n-bit integer
+B- n-bit integer
+C- n+1- bit integer
+
+C=A+B
+
+pseudocode:
+
+Add(A,B):
+carry = 0
+for i = 1 to n
+  C[i]=(A[i]+B[i]+carry)%2
+  if (A[i]+B[i]+carry)/2 = 1
+    carry = 1
+  else 
+    carry = 0
+if carry = 1
+  c[n] = 1
