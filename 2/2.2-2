@@ -1,0 +1,18 @@
+
+Selection-Sort(A[],n):
+for j = 1 to n-1
+  min = A[j]
+  i = j+1 to n
+    if A[i] < A[j]
+    min = i
+  swap (A[i],A[min])
+  
+Loop Invariant: At the beginning of the ith iteration we have the i-1 smallest elements in sorted order stored in A[1] to A[i-1].
+                At the end of the ith iteration the sorted invariant extends by one.
+ 
+ 
+ It needs to run for the first n-1 elements only because at the end of n-1 iterations we reach A[n-1] and sort it with A[n] completing
+ the sorting of the array.
+ 
+ 
+ Best-case = Worst-cast = Θ(n^2).
