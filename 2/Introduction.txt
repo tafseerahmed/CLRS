@@ -1,0 +1,114 @@
+Analysis of Algorithms
+
+>Definition: The theoretical study of computer program perfromance and resource usage.
+
+What is more important the performance?
+>Correctness
+>Stability
+>Simplicity
+>Modularity
+>Features
+>User-Friendliness
+>Security
+>Scalability
+>Program-time
+
+Why study Algorithms and performance?
+>Realtime-Constraints
+>Slow performance is non-user friendly
+>Feasible and non-Feasible
+>Cutting-edge of Entrepreneurship
+>Its a currency you use to pay for all the other features
+
+===============================================================================================
+>Problem: Sorting
+input: Sequence <a1, a2,..... an> of numbers
+
+output: permutation <a1`, a2`,.... an`> 		
+	such that they are monotonically increasing
+	a1`<=a2`<=....<=an
+
+
+INSERTION SORT
+
+>pseudocode:
+
+Insertion-Sort(A,n) // Sorts A[1..N]
+
+for j=2 to A.length 			N //(N - 2 + 1 + 1)
+	key=A[j]			N-1
+	i=j-1				N-1
+	while i>0 and A[i]>key		sum(Tj) for j=2 to N //T2 + T3 + .... + TN
+		A[i+1] = A[i]			sum(Tj-1) for j=2 to N
+		i=i-1				sum(Tj-1) for j=2 to N
+	A[i+1] = key			N-1
+
+Running Time:
+>Depends on input...(if input is already sorted?)
+    completely sorted / reverse sorted
+>Depends on input-size.. 6 vs 6x10^9 elements
+ -Parameterize in input size
+>We want upper bounds on running time
+ -Time is no more than a certain amount x.
+ -Represents a guarantee to the user. Gaurantee is key.
+ eg. the program doesnt run more than 3 seconds.
+>real time setting (Feasibility)
+
+
+Types of Analysis:
+
+    Worst-Case Analysis (Usually)
+
+    >T(n) = max-time on any input size N.
+        Always tells max-time rather than some random time on 
+        some random input.
+        <max-time> is key here because otherwise it would be a relation
+        not a function.
+    
+    Averate-case Analysis (sometimes)
+
+    >T(n) = expected-time over all inputs of size n.
+        what does expected mean?
+        
+        >we need a statistical distribution of inputs
+        >weighted average of inputs
+
+        t(n) = t1*p1 + t2*p2 +....+ tn*pn 
+    
+    Best-case Analysis (never)
+        >why?
+
+
+    What is Insertion Sort's worst-case running time?
+    
+    >Depends on computer? (hardware talks )
+    which software runs faster depends on machine
+    -relative speed ( on same machine )
+    -absolute speed ( on different machine )
+    # is there a way to determine which algorithm will run faster
+    no matter what machine i am running it on?
+
+
+    #BIG IDEA
+    >Asymptotic Analysis of Algorithms
+
+        >Ignore machine dependent Constants 
+        >Look at the growth of T(n) as n-> infinity
+        >reduces complex analysis to a bunch of mathematics
+
+    Theta Notation:
+        >Drop Low-order terms
+        >Ignore leading Constants 
+
+    ex: 3*n^3 + 90*n^2 + 20 = theta (n^3)
+
+    
+        
+
+
+
+
+
+
+
+
