@@ -1,0 +1,10 @@
+Problem:
+Input: A sequence of n numbers A = <a1,a2,...,an> and a value v
+Output: An index i such that v = A[i] or the special value NIL if v does not appear in A.
+
+pseudocode:
+Search(A[n],v):
+for i = 1 to n
+  if A[i] = v
+    output i and break
+output NIL
