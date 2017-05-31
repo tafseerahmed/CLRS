@@ -1,0 +1,4 @@
+To modify any algorithm to have a good best-case running time we simply check if the task we are performing is required or not i.e
+check whether or not it satisfies the goal of the algorithm.
+for example in case of sorting if the elements are already sorted we simply check for that and if its sorted then no other operation
+is required leading to a best case running time of Θ(n).
