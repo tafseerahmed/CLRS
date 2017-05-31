@@ -1,0 +1,8 @@
+N/2 elements need to checked on average for an equally likely statistical distribution.
+
+In the worst case linear search has Θ(n) running time. Hence the entire array needs to be checked.
+
+In both the cases the runing time is Θ(n) as 
+average case for n/2:= Θ(n)
+worst case for n:= Θ(n)
+
